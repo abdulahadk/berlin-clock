@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Sonar') {
             steps {
-                sh "mvn sonar:sonar -Dsonar.host.url=http://192.168.1.7:9000/sonar/ -Dsonar.login=admin -Dsonar.password=alm888# -Dsonar.skipPackageDesign=true"
+                sh "mvn sonar:sonar -Dsonar.host.url=http://10.10.69.199/sonar -Dsonar.login=admin -Dsonar.password=alm888# -Dsonar.skipPackageDesign=true"
             }
         }
     }
